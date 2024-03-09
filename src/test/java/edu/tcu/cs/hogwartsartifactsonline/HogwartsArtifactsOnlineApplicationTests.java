@@ -1,4 +1,4 @@
-package edu.tcu.tcu.hogwartsartifactsonline;
+package edu.tcu.cs.hogwartsartifactsonline;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -133,7 +133,7 @@ class ArtifactControllerIntegrationTest {
         this.mockMvc.perform(post(this.baseUrl + "/artifacts").contentType(MediaType.APPLICATION_JSON).content(json).accept(MediaType.APPLICATION_JSON).header(HttpHeaders.AUTHORIZATION, this.token))
                 .andExpect(jsonPath("$.flag").value(false))
                 .andExpect(jsonPath("$.code").value(StatusCode.INVALID_ARGUMENT))
-                .andExpect(jsonPath("$.message").value("Provided arguments are invalid, see data for details"))
+                .andExpect(jsonPath("$.message").value("Provided arguments are invalid, see data for details."))
                 .andExpect(jsonPath("$.data.name").value("name is required."))
                 .andExpect(jsonPath("$.data.description").value("description is required."))
                 .andExpect(jsonPath("$.data.imageUrl").value("imageUrl is required."));
@@ -197,7 +197,7 @@ class ArtifactControllerIntegrationTest {
         this.mockMvc.perform(put(this.baseUrl + "/artifacts/1250808601744904191").contentType(MediaType.APPLICATION_JSON).content(json).accept(MediaType.APPLICATION_JSON).header(HttpHeaders.AUTHORIZATION, this.token))
                 .andExpect(jsonPath("$.flag").value(false))
                 .andExpect(jsonPath("$.code").value(StatusCode.INVALID_ARGUMENT))
-                .andExpect(jsonPath("$.message").value("Provided arguments are invalid, see data for details"))
+                .andExpect(jsonPath("$.message").value("Provided arguments are invalid, see data for details."))
                 .andExpect(jsonPath("$.data.name").value("name is required."))
                 .andExpect(jsonPath("$.data.description").value("description is required."))
                 .andExpect(jsonPath("$.data.imageUrl").value("imageUrl is required."));

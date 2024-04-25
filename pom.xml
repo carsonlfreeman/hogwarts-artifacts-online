@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>edu.tcu.tcu</groupId>
-    <artifactId>hogwarts-artifacts-online</artifactId>
+    <artifactId>hogwarts-artifacts-online-carson-freeman</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>hogwarts-artifacts-online</name>
     <description>hogwarts-artifacts-online</description>

@@ -7,8 +7,8 @@ spring:
             endpoint: ${AZURE_KEY_VAULT_ENDPOINT}
   datasource:
     url: ${datasource-url} # URL of mysql in azure
-    username: ${datasource-username}}# admin username of mysql
-    password: ${datasource-password}}
+    username: ${datasource-username}
+    password: ${datasource-password}
   jpa:
     hibernate:
       ddl-auto: none
